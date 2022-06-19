@@ -33,9 +33,9 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ehZ-FR-7g8" firstAttribute="top" secondItem="0TU-q3-DMf" secondAttribute="top" constant="224" id="L5c-sk-MYa"/>
-                                    <constraint firstAttribute="width" secondItem="0TU-q3-DMf" secondAttribute="height" multiplier="25:81" id="kil-qU-PLn"/>
-                                    <constraint firstItem="ehZ-FR-7g8" firstAttribute="centerY" secondItem="0TU-q3-DMf" secondAttribute="centerY" id="lcw-UP-gNW"/>
+                                    <constraint firstItem="ehZ-FR-7g8" firstAttribute="top" secondItem="0TU-q3-DMf" secondAttribute="top" constant="224" id="Ssp-yP-lby"/>
+                                    <constraint firstItem="ehZ-FR-7g8" firstAttribute="centerY" secondItem="0TU-q3-DMf" secondAttribute="centerY" id="a6E-Xr-7u6"/>
+                                    <constraint firstAttribute="width" secondItem="0TU-q3-DMf" secondAttribute="height" multiplier="25:81" id="xR5-C0-LC9"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uk-2w-zgN">
@@ -49,20 +49,30 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="X0w-cJ-raz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0uk-2w-zgN" secondAttribute="bottom" constant="38" id="7sT-Wj-mlH"/>
-                            <constraint firstItem="0uk-2w-zgN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="AQ1-9m-ZtO"/>
-                            <constraint firstItem="0TU-q3-DMf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="MIq-pd-92z"/>
-                            <constraint firstItem="0uk-2w-zgN" firstAttribute="top" secondItem="0TU-q3-DMf" secondAttribute="bottom" constant="53" id="MOA-to-p4o"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0uk-2w-zgN" secondAttribute="trailing" constant="127" id="MwA-pR-Sad"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0TU-q3-DMf" secondAttribute="trailing" constant="107" id="Vjd-Lo-vyt"/>
-                            <constraint firstItem="0TU-q3-DMf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="ped-3G-PHD"/>
+                            <constraint firstItem="0uk-2w-zgN" firstAttribute="top" secondItem="0TU-q3-DMf" secondAttribute="bottom" constant="53" id="43U-Gr-R0H"/>
+                            <constraint firstItem="0TU-q3-DMf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="9Fe-zl-dBb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0TU-q3-DMf" secondAttribute="trailing" constant="107" id="BgA-Wy-jfr"/>
+                            <constraint firstItem="0TU-q3-DMf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="Qb3-6q-Lq5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0uk-2w-zgN" secondAttribute="trailing" constant="127" id="TuX-rh-ceF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0uk-2w-zgN" secondAttribute="bottom" constant="38" id="jcy-fb-RJX"/>
+                            <constraint firstItem="0uk-2w-zgN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="uPp-Zr-zOk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="changeButton" destination="0uk-2w-zgN" id="wwh-3T-6Zs"/>
+                        <outlet property="greenLight" destination="dCb-NS-dlL" id="gyW-PE-N9d"/>
+                        <outlet property="redLight" destination="YcI-f0-88a" id="Opl-uc-kng"/>
+                        <outlet property="stackLights" destination="0TU-q3-DMf" id="9Sp-PM-4YR"/>
+                        <outlet property="yellowLight" destination="ehZ-FR-7g8" id="zCl-eP-kzS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
